@@ -1,0 +1,9 @@
+﻿using Data;
+
+namespace Shaders.Assets
+{
+    public readonly struct CubemapSkyboxFragmentShader : IEmbeddedResource
+    {
+        readonly Address IEmbeddedResource.Address => "Assets/CubemapSkybox.fragment.glsl";
+    }
+}
