@@ -26,7 +26,7 @@
 		<ProjectReference Include="..\..\types\core\Types.Core.csproj" />
 		<ProjectReference Include="..\..\unmanaged\tests\Unmanaged.Tests.csproj" />
 		<ProjectReference Include="..\..\worlds\tests\Worlds.Tests.csproj" />
-		<ProjectReference Include="..\source\Skybox.csproj" />
+		<ProjectReference Include="..\source\Skyboxes.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
