@@ -1,4 +1,4 @@
-﻿namespace Shaders.Components
+﻿namespace Skyboxes.Components
 {
     public readonly struct IsSkybox
     {

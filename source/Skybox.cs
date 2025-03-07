@@ -1,8 +1,8 @@
 ﻿using Rendering.Components;
-using Shaders.Components;
+using Skyboxes.Components;
 using Worlds;
 
-namespace Shaders
+namespace Skyboxes
 {
     public readonly partial struct Skybox : IEntity
     {

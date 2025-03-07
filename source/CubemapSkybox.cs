@@ -5,14 +5,15 @@ using Materials;
 using Meshes;
 using Rendering;
 using Rendering.Components;
-using Shaders.Assets;
-using Shaders.Components;
+using Shaders;
+using Skyboxes.Assets;
+using Skyboxes.Components;
 using System.Numerics;
 using Textures;
 using Unmanaged;
 using Worlds;
 
-namespace Shaders
+namespace Skyboxes
 {
     public readonly partial struct CubemapSkybox : IEntity
     {

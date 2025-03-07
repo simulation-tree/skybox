@@ -1,6 +1,6 @@
 ﻿using Data;
 
-namespace Shaders.Assets
+namespace Skyboxes.Assets
 {
     public readonly struct CubemapSkyboxVertexShader : IEmbeddedResource
     {
