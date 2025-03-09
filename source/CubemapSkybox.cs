@@ -8,9 +8,9 @@ using Rendering.Components;
 using Shaders;
 using Skyboxes.Assets;
 using Skyboxes.Components;
+using System;
 using System.Numerics;
 using Textures;
-using Unmanaged;
 using Worlds;
 
 namespace Skyboxes
@@ -29,7 +29,7 @@ namespace Skyboxes
             this.world = world;
             this.value = world.CreateEntity(new IsRenderer(meshReference, materialReference, renderMask));
 
-            USpan<Vector3> positions = stackalloc Vector3[]
+            Span<Vector3> positions = stackalloc Vector3[]
             {
                 new(-1, 1, -1),
                 new(1, 1, -1),
@@ -41,7 +41,7 @@ namespace Skyboxes
                 new(-1, -1, 1)
             };
 
-            USpan<Vector2> uvs = stackalloc Vector2[]
+            Span<Vector2> uvs = stackalloc Vector2[]
             {
                 new(0, 0),
                 new(1, 0),
@@ -49,7 +49,7 @@ namespace Skyboxes
                 new(0, 1)
             };
 
-            USpan<uint> indices = stackalloc uint[]
+            Span<uint> indices = stackalloc uint[]
             {
                 0, 1, 2, 2, 3, 0,
                 1, 5, 6, 6, 2, 1,
