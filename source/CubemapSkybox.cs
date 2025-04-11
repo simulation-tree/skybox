@@ -64,7 +64,7 @@ namespace Skyboxes
 
             Shader vertexShader = new(world, EmbeddedResource.GetAddress<CubemapSkyboxVertexShader>(), ShaderType.Vertex);
             Shader fragmentShader = new(world, EmbeddedResource.GetAddress<CubemapSkyboxFragmentShader>(), ShaderType.Fragment);
-            Material material = new(world, vertexShader, fragmentShader, MaterialFlags.DepthTest, CompareOperation.LessOrEqual);
+            Material material = new(world, vertexShader, fragmentShader);
             material.AddComponentBinding<CameraMatrices>(new(0, 0), camera);
             material.AddTextureBinding(new(1, 0), cubemap);
             AddReference(material);
