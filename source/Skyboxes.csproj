@@ -44,9 +44,9 @@
 
   <ItemGroup>
     <Content Include="bin/Debug/net9.0/Skyboxes.dll" Pack="true" PackagePath="tools/debug/Skyboxes.dll" Visible="false"/>
-    <Content Include="bin/Debug/net9.0/Skyboxes.xml" Pack="true" PackagePath="tools/debug/Skyboxes.xml" Visible="false"/>
+    <Content Include="bin/Debug/net9.0/Skyboxes.xml" Pack="true" PackagePath="tools/debug/Skyboxes.xml" Visible="false" Condition="Exists('bin/Debug/net9.0/Skyboxes.xml')"/>
     <Content Include="bin/Release/net9.0/Skyboxes.dll" Pack="true" PackagePath="tools/release/Skyboxes.dll" Visible="false"/>
-    <Content Include="bin/Release/net9.0/Skyboxes.xml" Pack="true" PackagePath="tools/release/Skyboxes.xml" Visible="false"/>
+    <Content Include="bin/Release/net9.0/Skyboxes.xml" Pack="true" PackagePath="tools/release/Skyboxes.xml" Visible="false" Condition="Exists('bin/Release/net9.0/Skyboxes.xml')"/>
     <Content Include="build/Skyboxes.targets" Pack="true" PackagePath="build/Skyboxes.targets" Visible="false"/>
   </ItemGroup>
 
