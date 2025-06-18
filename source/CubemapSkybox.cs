@@ -15,8 +15,7 @@ namespace Skyboxes
 {
     public readonly partial struct CubemapSkybox : IEntity
     {
-        public CubemapSkybox(World world, Camera camera, CubemapTexture cubemap) :
-            this(world, camera, cubemap, new LayerMask(0))
+        public CubemapSkybox(World world, Camera camera, CubemapTexture cubemap) : this(world, camera, cubemap, new LayerMask(1))
         {
         }
 
